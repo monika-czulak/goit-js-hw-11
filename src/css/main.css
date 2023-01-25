@@ -51,4 +51,10 @@
   width: 15%;
   height: 100%;
   cursor: pointer;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
+}
+.search-form button:focus,
+.search-form button:hover {
+  opacity: 90%;
 }/*# sourceMappingURL=main.css.map */
