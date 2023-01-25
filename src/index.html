@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./css/main.min.css" />
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page title</title>
+  <link rel="stylesheet" href="./css/main.min.css" />
+  <script type="module" src="./index.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <form class="search-form" id="search-form">
+      <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
+      <button type="submit"><svg class="search-form__icon" width="12px" height="12px">
+          <use href="./images/icons.svg#icon-search"></use>
+        </svg></button>
+    </form>
+  </header>
+  <main>
+    <div class="gallery"></div>
+  </main>
+</body>
+
 </html>
